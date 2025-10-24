@@ -1,0 +1,68 @@
+ ✈️ **Final Project Summary Report** for the Airline Reservation System using SQL Server: 
+# Airline Reservation System – SQL Server Implementation
+
+🎯 Objective  
+To design and implement a relational database system for managing flights, passengers, seat reservations, and bookings using SQL Server Management Studio (SSMS).
+
+
+
+ 🧱 Schema Overview
+
+| Table      | Description                                      |
+|------------|--------------------------------------------------|
+| Flights    | Stores flight details including schedule         |
+| passengers | Stores passenger information                     |
+| Seats      | Tracks seat availability and class per flight    |
+| Bookings   | Records reservations and booking status          |
+
+All tables are normalized to 3NF and include primary keys, foreign keys, and constraints for data integrity.
+
+---
+
+📥 Sample Data  
+- 10 flights across major Indian cities  
+- 10 customers with unique emails  
+- 10 seats linked to flights  
+- 10 bookings with varied statuses  
+
+---
+
+ 🔍 Key Queries
+
+- **Available Seats**: Filter by flight, class, and date range  
+- **Flight Search**: Filter by origin, destination, and schedule  
+
+---
+
+ ⚙️ Stored Procedures
+
+- `CreateBooking`: Inserts booking and marks seat as booked 
+- `CancelBooking`: Updates status and frees up seat  
+
+
+
+ 🔁 Triggers
+
+- `trg_AfterBookingInsert`: Automatically marks seat as booked  
+- `trg_AfterBookingUpdate`: Frees seat on cancellation  
+
+
+
+ 📊 Booking Summary View
+
+A consolidated view combining customer, flight, seat, and booking details for reporting and analysis.
+
+---
+
+ ✅ Deliverables Checklist
+
+| Component             | Status     |
+|----------------------|------------|
+| SQL Schema           | ✅ Complete |
+| Sample Data          | ✅ Complete |
+| Queries              | ✅ Complete |
+| Stored Procedures    | ✅ Complete |
+| Triggers             | ✅ Complete |
+| Booking Summary View | ✅ Complete |
+
+
